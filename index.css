@@ -9,9 +9,9 @@
 #wrapper{
     height: 100vh;
     /* coz everything is in wrapper so wrapper should have max height  */
-    overflow-x: auto;
+    overflow-x: hidden;
     /* to stop scrolling in x */
-    overflow-y:inherit;
+    overflow-y:auto;
     /* to scroll in y */
     perspective: 10px;
     /* to give distance between user and window */
@@ -19,6 +19,7 @@
 .container {
     position: relative;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -59,6 +60,7 @@ section{
     background-color: rgb(45,45,45);
     color:white;
     padding: 5rem 0px;
+
 }
 
 .bg1{
